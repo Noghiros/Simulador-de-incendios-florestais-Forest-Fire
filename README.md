@@ -57,19 +57,19 @@ Esse modelo é amplamente usado para estudar sistemas críticos, dinâmica de pr
 # 👥 Integrantes e suas contribuições (Grupo 2)
 
 * [<img src="https://i.imgur.com/6wtHdzd.png" width="30">](https://github.com/felipebataglini) **Felipe de Oliveira Guimarães Bataglini**
-- Implementação versão distribuída
-- Comunicação via sockets
-- Testes e validação
+  - Implementação versão distribuída
+  - Comunicação via sockets
+  - Testes e validação
   
 * [<img src="https://i.imgur.com/fA4JpJg.png" width="30">](https://github.com/JoaoVBLaneiro) **João Vitor Briganti Laneiro**
-- Implementação versão paralela com threads
-- Sistema de logging e CSV
-- Documentação técnica
+  - Implementação versão paralela com threads
+  - Sistema de logging e CSV
+  - Documentação técnica
   
 * [<img src="https://i.imgur.com/0ldubtT.png" width="30">](https://github.com/Noghiros) **Stefano Calheiros Stringhini**
-- Implementação versão sequencial
-- Desenvolvimento do sistema de benchmark
-- Análise de resultados
+  - Implementação versão sequencial
+  - Desenvolvimento do sistema de benchmark
+  - Análise de resultados
 
 ---
 
