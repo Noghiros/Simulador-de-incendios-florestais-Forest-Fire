@@ -1,7 +1,7 @@
 # 🌲 Forest Fire — Projeto Paralelo e Distribuído
 
 **EC48A — Sistemas Distribuídos (UTFPR-CP) - C81**
-<p> Projeto final desenvolvido para a disciplina de Sistemas Distribuídos, aplicando técnicas de programação sequencial, paralela e distribuída para simular o clássico modelo de *propagação de incêndios florestais* (*Forest Fire Model*). </p>
+<p> Projeto final desenvolvido para a disciplina de Sistemas Distribuídos, aplicando técnicas de programação sequencial, paralela e distribuída para simular o clássico modelo de propagação de incêndios florestais (Forest Fire Model). </p>
 
 ---
 
