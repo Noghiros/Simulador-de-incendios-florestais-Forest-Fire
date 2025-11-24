@@ -9,17 +9,17 @@
 
 Implementar e comparar três versões do modelo de incêndios florestais (Forest Fire):
 
-* Versão Sequencial
-* Versão Paralela (Threads Python)
-* Versão Distribuída (Sockets TCP)
+* Versão Sequencial;
+* Versão Paralela (Threads Python);
+* Versão Distribuída (Sockets TCP).
 
 O objetivo central é analisar:
 
-* 🔥 Desempenho
-* 🔥 Speedup
-* 🔥 Escalabilidade
-* 🔥 Custos de comunicação
-* 🔥 Limitações da paralelização e distribuição
+* 🔥 Desempenho;
+* 🔥 Speedup;
+* 🔥 Escalabilidade;
+* 🔥 Custos de comunicação;
+* 🔥 Limitações da paralelização e distribuição.
 
 ---
 
@@ -29,47 +29,47 @@ O objetivo central é analisar:
 
 Um autômato celular probabilístico onde cada célula pode estar em um de três estados:
 
-* 0 – Vazio
-* 1 – Árvore
-* 2 – Queimando
+* 0 – Vazio;
+* 1 – Árvore;
+* 2 – Queimando.
 
 A evolução segue as regras probabilísticas clássicas:
 
-1. Uma árvore pega fogo se algum vizinho estiver queimando
-2. Uma árvore pode acender sozinha com probabilidade **f** (raios)
-3. Uma célula vazia pode crescer uma árvore com probabilidade **p**
-4. Uma célula queimando vira vazia
+1. Uma árvore pega fogo se algum vizinho estiver queimando;
+2. Uma árvore pode acender sozinha com probabilidade **f** (raios);
+3. Uma célula vazia pode crescer uma árvore com probabilidade **p**;
+4. Uma célula queimando vira vazia.
 
 Esse modelo é amplamente usado para estudar sistemas críticos, dinâmica de propagação e autômatos celulares.
 
 ### 📌 Técnicas Computacionais
 
-* Execução sequencial pura
-* Paralelismo com Threads (GIL-bound, mas útil para I/O e simulação)**
-* Domínio dividido (decomposition)
-* Comunicação via Sockets TCP em topologia linear
-* Sincronização de fronteiras (ghost rows)
-* Medição de tempos com `time.perf_counter`
-* Plotagem e análise com matplotlib + CSV
+* Execução sequencial pura;
+* Paralelismo com Threads (GIL-bound, mas útil para I/O e simulação)**;
+* Domínio dividido (decomposition);
+* Comunicação via Sockets TCP em topologia linear;
+* Sincronização de fronteiras (ghost rows);
+* Medição de tempos com `time.perf_counter`;
+* Plotagem e análise com matplotlib + CSV.
 
 ---
 
 # 👥 Integrantes e suas contribuições (Grupo 2)
 
 * [<img src="https://i.imgur.com/6wtHdzd.png" width="30">](https://github.com/felipebataglini) **Felipe de Oliveira Guimarães Bataglini**
-  - Implementação versão distribuída
-  - Comunicação via sockets
-  - Testes e validação
+  - Implementação versão distribuída;
+  - Comunicação via sockets;
+  - Testes e validação.
   
 * [<img src="https://i.imgur.com/fA4JpJg.png" width="30">](https://github.com/JoaoVBLaneiro) **João Vitor Briganti Laneiro**
-  - Implementação versão paralela com threads
-  - Sistema de logging e CSV
-  - Documentação técnica
+  - Implementação versão paralela com threads;
+  - Sistema de logging e CSV;
+  - Documentação técnica.
   
 * [<img src="https://i.imgur.com/0ldubtT.png" width="30">](https://github.com/Noghiros) **Stefano Calheiros Stringhini**
-  - Implementação versão sequencial
-  - Desenvolvimento do sistema de benchmark
-  - Análise de resultados
+  - Implementação versão sequencial;
+  - Desenvolvimento do sistema de benchmark;
+  - Análise de resultados.
 
 ---
 
@@ -79,10 +79,10 @@ Esse modelo é amplamente usado para estudar sistemas críticos, dinâmica de pr
 pip install numpy matplotlib
 ```
 
-* Python **3.8+**
-* `numpy` — matrizes e atualização do autômato
-* `matplotlib` — geração de gráficos comparativos
-* (`socket`, `threading`, `csv` → nativos do Python)
+* Python **3.8+**;
+* `numpy` — matrizes e atualização do autômato;
+* `matplotlib` — geração de gráficos comparativos;
+* (`socket`, `threading`, `csv` → nativos do Python).
 
 ---
 
@@ -93,34 +93,34 @@ Foram executadas baterias de testes variando:
 * Tamanho da grade:
   `50×50`, `100×100`, `200×200`, ...
 * Número de iterações:
-  `10`, `30`, `50`, `100`...
+  `10`, `30`, `50`, `100`, ...
 * Número de threads / processos distribuídos:
-  `2`, `4`, `8`...
+  `2`, `4`, `8`, ...
 
 Cada execução foi repetida de 3 a 5 vezes, com cálculo de:
 
-* Tempo médio
-* Speedup
-* Eficiência
-* Tempo gasto em comunicação (versão distribuída)
+* Tempo médio;
+* Speedup;
+* Eficiência;
+* Tempo gasto em comunicação (versão distribuída).
 
 Ferramentas de medição:
 
-* `perf_counter()`
-* arquivos `.csv` gerados automaticamente
-* `plotar_graficos.py` para gerar gráficos
+* `perf_counter()`;
+* arquivos `.csv` gerados automaticamente;
+* `plotar_graficos.py` para gerar gráficos.
 
 ## 💻 Ambiente de Testes
 
 ### Hardware
-- **CPU**: [Intel Core i3-7100U CPU @ 2.40GHz - 2 Núcleos Físicos / 4 Threads Lógicas (Virtual Cores)]
-- **RAM**: [12,0 GB DDR4]
-- **Rede**: [Localhost (127.0.0.1) — Custo Zero de Latência Real, mas o overhead de serialização/socket é mensurado.]
-- **Sistema**: [Windows 10 Home]
+- **CPU**: [Intel Core i3-7100U CPU @ 2.40GHz - 2 Núcleos Físicos / 4 Threads Lógicas (Virtual Cores)];
+- **RAM**: [12,0 GB DDR4];
+- **Rede**: [Localhost (127.0.0.1) — Custo Zero de Latência Real, mas o overhead de serialização/socket é mensurado.];
+- **Sistema**: [Windows 10 Home].
 
 ### Software
-- **Python**: 3.12.1
-- **Bibliotecas**: numpy 2.2.6, matplotlib 3.1.0.7
+- **Python**: 3.12.1;
+- **Bibliotecas**: numpy 2.2.6, matplotlib 3.1.0.7.
 
 ---
 
