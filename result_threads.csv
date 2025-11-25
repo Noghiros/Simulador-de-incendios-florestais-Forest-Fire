@@ -1,2 +1,2 @@
 mode,Nx,Ny,nsteps,threads,p,f,total_time
-threads,1024,1024,200,4,0.01,<_io.TextIOWrapper name='result_threads.csv' mode='w' encoding='cp1252'>,770.781354
+threads,256,256,200,4,0.01,<_io.TextIOWrapper name='result_threads.csv' mode='w' encoding='cp1252'>,83.638641

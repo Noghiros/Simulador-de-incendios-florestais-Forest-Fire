@@ -1,2 +1,2 @@
 rank,rows,Nx_total,Ny,nsteps,p,f,comp_time,comm_time,total
-1,256-511,1024,1024,200,0.01,<_io.TextIOWrapper name='result_worker_1.csv' mode='w' encoding='cp1252'>,347.811562,8.118926,355.930488
+1,64-127,256,256,200,0.01,<_io.TextIOWrapper name='result_worker_1.csv' mode='w' encoding='cp1252'>,33.601205,3.348302,36.949507

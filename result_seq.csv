@@ -1,2 +1,2 @@
 mode,Nx,Ny,nsteps,p,f,total_time,avg_burn
-seq,1024,1024,200,0.01,<_io.TextIOWrapper name='result_seq.csv' mode='w' encoding='cp1252'>,8.932154,9154.81
+seq,256,256,200,0.01,<_io.TextIOWrapper name='result_seq.csv' mode='w' encoding='cp1252'>,0.862533,572.565
